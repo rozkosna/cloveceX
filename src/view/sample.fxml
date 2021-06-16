@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pozadí" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Desktop/CSP/CloveceNezlobSe1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="zpět" layoutX="19.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zpět" visible="false" />
+      <Button fx:id="zavřít" cancelButton="true" layoutX="428.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zavřít" visible="false">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/škola/programování/křížek.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="kostka" layoutX="398.0" layoutY="287.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="44.0" text="hodit" visible="false">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+      <TextFlow layoutX="442.0" layoutY="292.0" prefHeight="26.0" prefWidth="22.0" />
+   </children>
+</AnchorPane>
