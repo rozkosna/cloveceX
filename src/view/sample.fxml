@@ -16,7 +16,7 @@
       <Button fx:id="zpět" layoutX="19.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zpět" visible="false" />
       <Button fx:id="zavřít" cancelButton="true" layoutX="428.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zavřít" visible="false">
          <graphic>
-            <ImageView fitHeight="42.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../OneDrive/Desktop/škola/programování/křížek.jpg" />
                </image>

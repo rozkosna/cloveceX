@@ -50,8 +50,11 @@ public class HraciPlocha {
     }
 
     //Nasazení figurky na správné místo
-    public void nasad(BarvaFigurky barvaFigurky){}
-    public void nasad(Figurka figurka){}
+    public void nasad(BarvaFigurky barvaFigurky){
+        int novaPozice = barvaFigurky.getStart();
+        hraciPole.set(novaPozice,startovniDomecekMap.get(barvaFigurky).nasadFigurku());
+    }
+
 
     //Posunutí figurky o daný počet míst
     public void posunFigurku(Figurka figurka, int pocetPoli){
