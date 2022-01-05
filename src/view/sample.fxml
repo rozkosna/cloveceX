@@ -4,17 +4,27 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="pozadí" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="pozadi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
    <children>
       <ImageView fitHeight="360.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../OneDrive/Desktop/CSP/CloveceNezlobSe1.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="zpět" layoutX="19.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zpět" visible="false" />
-      <Button fx:id="zavřít" cancelButton="true" layoutX="428.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zavřít" visible="false">
+      <BorderPane prefHeight="360.0" prefWidth="480.0">
+         <top>
+            <Pane prefHeight="360.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="hodKostkou" layoutX="441.0" layoutY="173.0" text="0" />
+               </children>
+            </Pane>
+         </top></BorderPane>
+      <Label layoutX="434.0" layoutY="33.0" prefHeight="17.0" prefWidth="44.0" text="ZAVŘÍT" />
+      <Label layoutX="34.0" layoutY="34.0" prefHeight="17.0" prefWidth="32.0" text="ZPĚT" />
+      <Button fx:id="zavřít" cancelButton="true" layoutX="428.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="44.0" text="zavřít" visible="false">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -23,11 +33,72 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="kostka" layoutX="398.0" layoutY="287.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="44.0" text="hodit" visible="false">
+      <Button fx:id="kostka" layoutX="398.0" layoutY="287.0" mnemonicParsing="false" onAction="#hodKostkou" opacity="0.0" prefHeight="42.0" prefWidth="44.0" text="hodit">
          <effect>
             <ColorAdjust />
          </effect>
       </Button>
       <TextFlow layoutX="442.0" layoutY="292.0" prefHeight="26.0" prefWidth="22.0" />
+      <Button fx:id="zpět" layoutX="19.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="zpět" visible="false" />
+      <Pane prefHeight="360.0" prefWidth="480.0">
+         <children>
+            <Circle fill="#2197ff00" layoutX="240.0" layoutY="285.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="285.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="285.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="267.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="249.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="267.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="249.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="240.0" layoutY="76.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="76.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="76.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="94.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="222.0" layoutY="112.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="94.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="258.0" layoutY="112.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="345.0" layoutY="180.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="345.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="345.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="327.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="309.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="327.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="309.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="137.0" layoutY="180.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="137.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="137.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="155.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="173.0" layoutY="198.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+                <Circle fill="#2197ff00" layoutX="155.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="173.0" layoutY="162.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="169.27207946777344" layoutY="108.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="156.54415893554688" layoutY="121.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="182.0" layoutY="95.54415893554688" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="169.27207946777344" layoutY="133.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="182.0" layoutY="146.45584106445312" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="194.72792053222656" layoutY="108.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="207.45584106445312" layoutY="121.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="312.7279357910156" layoutY="108.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="300.0" layoutY="95.54415893554688" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="325.4558410644531" layoutY="121.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="287.2720642089844" layoutY="108.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="274.5441589355469" layoutY="121.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="312.7279357910156" layoutY="133.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="300.0" layoutY="146.45584106445312" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="169.27207946777344" layoutY="252.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="182.0" layoutY="265.4558410644531" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="156.54415893554688" layoutY="240.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="194.72792053222656" layoutY="252.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="207.45584106445312" layoutY="240.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="169.27207946777344" layoutY="227.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="182.0" layoutY="214.54415893554688" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="312.7279357910156" layoutY="252.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="325.4558410644531" layoutY="240.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="300.0" layoutY="265.4558410644531" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="312.7279357910156" layoutY="227.27207946777344" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="300.0" layoutY="214.54415893554688" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="287.2720642089844" layoutY="252.72792053222656" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+            <Circle fill="#2197ff00" layoutX="274.5441589355469" layoutY="240.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
